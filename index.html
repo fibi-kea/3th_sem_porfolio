@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -27,6 +28,7 @@
     </header>
 
     <main>
+      <!-- Hero -->
       <div id="hero">
         <div class="hero-content">
           <p>Fríðbjartur Miðberg - søger praktikplads!</p>
@@ -35,89 +37,39 @@
           </h2>
         </div>
       </div>
-      <div class="portfolio">
-        <div data-aos="fade-in" class="item">
-          <div class="item-content">
-            <a href="#" class="project-link">
-              <img class="item-img" src="images/1.jpg" alt="Image" />
-            </a>
-            <div class="item-title"><h3>Wordpress Rtheme</h3></div>
-            <div class="item-caption">
-              <p>Front-end</p>
-              <a href="#">Github</a>
-            </div>
-          </div>
-        </div>
 
-        <div data-aos="fade-in" class="item">
-          <div class="item-content">
-            <a href="#" class="project-link">
-              <img class="item-img" src="images/2.jpg" alt="Image" />
-            </a>
-            <div class="item-title"><h3>Wordpress Rtheme</h3></div>
-            <div class="item-caption">
-              <p>Front-end</p>
-              <a href="#">Github</a>
-            </div>
-          </div>
-        </div>
+      <!-- Portfolio container -->
+      <div data-container class="portfolio"></div>
+    </main>
 
-        <div data-aos="fade-in" class="item">
-          <div class="item-content large">
-            <a href="#" class="project-link">
-              <img class="item-img" src="images/3.jpg" alt="Image" />
-            </a>
-            <div class="item-title"><h3>Wordpress Rtheme</h3></div>
-            <div class="item-caption">
-              <p>Front-end</p>
-              <a href="#">Github</a>
-            </div>
+    <!-- Item template -->
+    <template data-template>
+      <div data-aos="fade-up" class="item">
+        <div class="item-content large">
+          <a href="#" class="project-link">
+            <img data-img class="item-img" src="" alt="Image" />
+          </a>
+          <div
+            data-aos="zoom-in-right"
+            data-aos-duration="200"
+            class="item-title"
+          >
+            <h3 data-title></h3>
           </div>
-        </div>
-
-        <div class="item">
-          <div class="item-content">
-            <a href="#" class="project-link">
-              <img class="item-img" src="images/4.jpg" alt="Image" />
-            </a>
-            <div class="item-title"><h3>Wordpress Rtheme</h3></div>
-            <div class="item-caption">
-              <p>Front-end</p>
-              <a href="#">Github</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item-content large">
-            <a href="#" class="project-link">
-              <img class="item-img" src="images/4.jpg" alt="Image" />
-            </a>
-            <div class="item-title"><h3>Wordpress Rtheme</h3></div>
-            <div class="item-caption">
-              <p>Front-end</p>
-              <a href="#">Github</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item-content">
-            <a href="#" class="project-link">
-              <img class="item-img" src="images/4.jpg" alt="Image" />
-            </a>
-            <div class="item-title"><h3>Wordpress Rtheme</h3></div>
-            <div class="item-caption">
-              <p>Front-end</p>
-              <a href="#">Github</a>
-            </div>
+          <div class="item-category">
+            <p data-category></p>
+            <a data-github href="">Github</a>
           </div>
         </div>
       </div>
-    </main>
+    </template>
 
     <footer></footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
