@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -19,8 +19,8 @@
 
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#">CV</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -29,11 +29,11 @@
 
     <main>
       <!-- Hero -->
-      <div id="hero">
+      <div id="hero" class="">
         <div class="hero-content">
-          <p>Fríðbjartur Miðberg - søger praktikplads!</p>
+          <p>Hi, my name is Fríðbjartur Miðberg</p>
           <h2>
-            Jeg hedder Fríðbjartur Miðberg. Dette er min portfolio!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </h2>
         </div>
       </div>
@@ -46,9 +46,9 @@
     <template data-template>
       <div data-aos="fade-up" class="item">
         <div class="item-content large">
-          <a href="#" class="project-link">
-            <img data-img class="item-img" src="" alt="Image" />
-          </a>
+          <!-- <a href="" class="project-link"> -->
+          <img data-img class="item-img" src="" alt="Image" />
+          <!-- </a> -->
           <div
             data-aos="zoom-in-right"
             data-aos-duration="200"
@@ -58,16 +58,38 @@
           </div>
           <div class="item-category">
             <p data-category></p>
-            <a data-github href="">Github</a>
+            <a data-github class="githublink" href="" target="_blank"></a>
           </div>
         </div>
       </div>
     </template>
 
+    <!-- Modal -->
+    <div id="modal" class="hide-modal">
+      <div id="close-modal"></div>
+      <div id="load" class="loading"></div>
+      <div id="modal-container" class="hide-modal">
+        <div class="modal-img"><img data-modal="img" src="" alt="Image" /></div>
+        <div class="modal-content">
+          <h3 data-modal="title"></h3>
+          <div class="modal-description" data-modal="description"></div>
+          <div id="button-container">
+            <a class="modal-button" data-modal="github" href="" target="_blank"
+              >Github</a
+            >
+            <a class="modal-button" data-modal="link" href="" target="_blank"
+              >Link</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
     <footer></footer>
 
     <script src="js/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
