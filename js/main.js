@@ -5,6 +5,7 @@ window.addEventListener("DOMContentLoaded", init);
 function init() {
   console.log("init");
   get();
+  navMenu();
 }
 
 function post(newItem) {
@@ -94,7 +95,7 @@ function showSingleItem(item) {
   document.querySelector("[data-modal=title]").textContent = item.title;
   document.querySelector("[data-modal=description]").innerHTML =
     item.description;
-  modalDescr.querySelector("p").removeAttribute("style");
+  modalDescr.querySelector("span").removeAttribute("style");
   document.querySelector("[data-modal=github]").href = item.github;
   document.querySelector("[data-modal=link]").href = item.link;
 
@@ -103,4 +104,26 @@ function showSingleItem(item) {
     document.querySelector("#modal-container").classList.add("hide-modal");
     document.querySelector("#load").classList.remove("hide-modal");
   });
+}
+
+//		nav-menu-mobile - eventlisterns
+function navMenu() {
+  console.log("navMenu");
+
+  function toggleMenu() {
+    console.log("toggleMenu");
+    document.querySelector(".burger").classList.toggle("change");
+    document.querySelector("nav").classList.toggle("show");
+    document.querySelector("header").classList.toggle("show");
+  }
+
+  function closeMenu() {
+    console.log("closeMenu");
+    document.querySelector(".burger").classList.remove("change");
+    document.querySelector("nav").classList.remove("show");
+    document.querySelector("header").classList.remove("show");
+  }
+
+  document.querySelector(".burger").addEventListener("click", toggleMenu);
+  document.querySelector("nav ul").addEventListener("click", closeMenu);
 }

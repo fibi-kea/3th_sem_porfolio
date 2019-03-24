@@ -17,6 +17,18 @@
         </a>
       </div>
 
+      <!-- Burger nav -->
+      <div class="burger">
+        <!--bar 1-->
+        <div class="bar1"></div>
+
+        <!--bar 2-->
+        <div class="bar2"></div>
+
+        <!--bar 3-->
+        <div class="bar3"></div>
+      </div>
+
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -29,7 +41,7 @@
 
     <main>
       <!-- Hero -->
-      <div id="hero" class="">
+      <div data-aos="fade" data-aos-duration="800" id="hero" class="">
         <div class="about-hero-content">
           <p>This is a text!</p>
           <h2>
@@ -39,18 +51,80 @@
       </div>
 
       <section class="about">
-        <div class="about-container">
+        <div class="about-img-container">
           <div class="about-img">
-            <img class="" src="images/profile.jpg" alt="Profile" />
+            <img
+              data-aos="zoom-in-right"
+              data-aos-duration="200"
+              class=""
+              src="images/profile.jpg"
+              alt="Profile"
+            />
+          </div>
+          <div
+            data-aos="zoom-in-right"
+            data-aos-duration="400"
+            class="about-img"
+          >
+            <img class="" src="images/about_02.jpg" alt="Profile" />
+          </div>
+          <div
+            data-aos="zoom-in-right"
+            data-aos-duration="400"
+            class="about-img"
+          >
+            <img class="" src="images/about_02_02.png" alt="Profile" />
+          </div>
+        </div>
+        <div class="about-txt">
+          <h3>Who am I?</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dolor
+            libero harum error obcaecati temporibus vitae cupiditate nemo ab
+            voluptas. Earum consequuntur aspernatur deserunt esse, ad neque odit
+            corporis debitis. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Est tempore, quos id alias vero recusandae maiores error!
+            Reprehenderit provident hic accusantium est molestias. Magnam
+            corporis sit sapiente ipsa iusto incidunt? Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Officia ab, nesciunt laudantium
+            alias voluptatum nihil rem! Eveniet ratione dignissimos aut ipsum,
+            neque quo non quam cum nisi illum modi at.
+          </p>
+
+          <div class="charts">
+            <h4>Current skills:</h4>
+
+            <div class="skill-bar">
+              <div class="skill-content skill-1"></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-content skill-2"></div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-content skill-3"></div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-content skill-4"></div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-content skill-5"></div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- Scroll to top button -->
+    <a href="#" class="cd-top js-cd-top"></a>
+
     <!-- Footer -->
     <footer></footer>
 
     <script src="js/main.js"></script>
+    <script src="js/scrolltop.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
