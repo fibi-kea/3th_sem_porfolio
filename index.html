@@ -86,12 +86,18 @@
           <h3 data-modal="title"></h3>
           <div class="modal-description" data-modal="description"></div>
           <div id="button-container">
-            <a class="modal-button" data-modal="github" href="" target="_blank"
-              >Github</a
-            >
-            <a class="modal-button" data-modal="link" href="" target="_blank"
-              >Link</a
-            >
+            <a
+              class="modal-button"
+              data-modal="github"
+              href=""
+              target="_blank"
+            ></a>
+            <a
+              class="modal-button"
+              data-modal="link"
+              href=""
+              target="_blank"
+            ></a>
           </div>
         </div>
       </div>
@@ -104,10 +110,12 @@
     <footer></footer>
 
     <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/scrolltop.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+      window.addEventListener("scroll", AOS.refreshHard);
     </script>
   </body>
 </html>

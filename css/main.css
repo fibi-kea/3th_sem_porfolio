@@ -100,18 +100,8 @@ h3 {
   font-size: 2.5rem;
   line-height: 2.3rem;
   text-transform: uppercase;
-  /* color: var(--main-title-color); */
+  color: var(--main-title-color);
   margin: 0;
-
-  color: rgba(0, 0, 0, 0);  
-  text-stroke-color: black);
-  text-stroke-width: 1px;
-  -moz-text-fill-color: rgba(0, 0, 0, 0);
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  -moz-text-stroke-color: black;
-  -webkit-text-stroke-color: black;
-  -moz-text-stroke-width: 1px;
-  -webkit-text-stroke-width: 1px;
 }
 
 h2 {
@@ -123,15 +113,19 @@ h2 {
 
 h4 {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 2rem;
   color: var(--main-title-color);
-  margin: 70px 0 60px 0;
+  margin: 100px 0 60px 0;
   padding: 0;
 }
 
 p {
   font-weight: 300;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 a:hover {
@@ -185,23 +179,23 @@ header {
 .bar1,
 .bar2,
 .bar3 {
-    height: 2px;
-    margin: 8px 0;
-    transition: 0.4s;
-    background-color: var(--main-title-color);
+  height: 2px;
+  margin: 8px 0;
+  transition: 0.4s;
+  background-color: var(--main-title-color);
 }
 
 .bar1 {
-    width: 30px;
+  width: 30px;
 }
 
 .bar2 {
-    width: 30px;
-    margin-left: 10px;
+  width: 30px;
+  margin-left: 10px;
 }
 
 .bar3 {
-    width: 30px;
+  width: 30px;
 }
 
 /* Rotate first bar */
@@ -287,6 +281,18 @@ header {
   margin: 0 auto;
 }
 
+.portfolio h3{
+  color: rgba(0, 0, 0, 0);  
+  text-stroke-color: black);
+  text-stroke-width: 1px;
+  -moz-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -moz-text-stroke-color: black;
+  -webkit-text-stroke-color: black;
+  -moz-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1px;
+}
+
 .item {
   display: block;
   position: relative;
@@ -344,13 +350,13 @@ header {
 }
 
 .item-content:hover .item-title h3 {
-  color: rgb(130,96,255);  
-  text-stroke-color: rgb(130,96,255);
+  color: rgb(130, 96, 255);
+  text-stroke-color: rgb(130, 96, 255);
   text-stroke-width: 1px;
-  -moz-text-fill-color: rgb(130,96,255);
-  -webkit-text-fill-color: rgb(130,96,255);
-  -moz-text-stroke-color:rgb(130,96,255);
-  -webkit-text-stroke-color: rgb(130,96,255);
+  -moz-text-fill-color: rgb(130, 96, 255);
+  -webkit-text-fill-color: rgb(130, 96, 255);
+  -moz-text-stroke-color: rgb(130, 96, 255);
+  -webkit-text-stroke-color: rgb(130, 96, 255);
   -moz-text-stroke-width: 1px;
   -webkit-text-stroke-width: 1px;
 }
@@ -482,7 +488,7 @@ header {
   -khtml-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   cursor: pointer;
@@ -531,12 +537,7 @@ header {
 
   text-transform: none;
 
-  color: white;  
-  text-stroke-width: 0;
-  -moz-text-fill-color: white;
-  -webkit-text-fill-color: white;
-  -moz-text-stroke-width: 0;
-  -webkit-text-stroke-width: 0;
+  color: white;
 }
 
 #modal h3::before {
@@ -580,7 +581,6 @@ header {
 
 /* ------- ABOUT ------- */
 .about {
-  position: relative;
   margin: 0 auto;
 }
 
@@ -591,7 +591,7 @@ header {
   margin-bottom: 80px;
 }
 
-.about-img-container{
+.about-img-container {
   margin: auto;
   width: 100%;
   max-width: 700px;
@@ -603,7 +603,7 @@ header {
   display: inline-block;
 }
 
-.about-img:nth-child(2){
+.about-img:nth-child(2) {
   width: 73%;
   height: 650px;
   overflow: hidden;
@@ -613,7 +613,7 @@ header {
   z-index: -1;
 }
 
-.about-img:nth-child(3){
+.about-img:nth-child(3) {
   width: 73%;
   height: 650px;
   overflow: hidden;
@@ -627,24 +627,17 @@ header {
   width: 110%;
 }
 
-.about-txt{
+.about-txt {
   max-width: 800px;
-margin: 80px auto 0 auto;
-position: relative;
+  margin: 80px auto 0 auto;
 }
 
 .about h3 {
   font-size: 2.5rem;
   margin-bottom: 30px;
+  position: relative;
 
   text-transform: none;
-
-  color: var(--main-title-color);  
-  text-stroke-width: 0;
-  -moz-text-fill-color: var(--main-title-color);
-  -webkit-text-fill-color: var(--main-title-color);
-  -moz-text-stroke-width: 0;
-  -webkit-text-stroke-width: 0;
 }
 
 .about h3::before {
@@ -659,22 +652,22 @@ position: relative;
 }
 
 /* skills bars */
-.charts{
+.charts {
   width: 100%;
   max-width: 800px;
-  margin: 50px auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
-.skill-bar{
+.skill-bar {
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: var(--main-txt-color);
   margin-bottom: 65px;
   position: relative;
 }
 
-.skill-content{
-  height: 100%;
+.skill-content {
+  height: 2px;
   background: var(--highlight-color);
   position: relative;
   color: var(--highlight-color);
@@ -683,7 +676,7 @@ position: relative;
   line-height: 0;
 }
 
-.skill-content::after{
+.skill-content::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -693,52 +686,95 @@ position: relative;
   right: 0;
 }
 
-.skill-content::before{
+.skill-content::before {
   position: absolute;
   left: 0;
   top: -10px;
 }
 
-.skill-1{
+.skill-1 {
   width: 70%;
 }
-.skill-1::before{
+.skill-1::before {
   content: "HTML & CSS";
 }
 
-.skill-2{
+.skill-2 {
   width: 35%;
 }
-.skill-2::before{
+.skill-2::before {
   content: "Javascript";
 }
 
-.skill-3{
+/* .skill-3{
   width: 40%;
 }
 .skill-3::before{
   content: "REST API";
-}
+} */
 
-.skill-4{
+.skill-4 {
   width: 98%;
 }
-.skill-4::before{
+.skill-4::before {
   content: "Photoshop";
 }
 
-.skill-5{
+.skill-5 {
   width: 75%;
 }
-.skill-5::before{
+.skill-5::before {
   content: "Design";
 }
 
-.skill-6{
+.skill-6 {
   width: 75%;
 }
-.skill-6::before{
+.skill-6::before {
   content: "Design";
+}
+
+/* Goals */
+.goals {
+  margin-top: 130px;
+  position: relative;
+  left: -230px;
+  width: 100vw;
+  background: url(../images/parallax_1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 70px 0 50px 0;
+  color: #cccccc;
+}
+
+.goals-content {
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+}
+
+.goals-content p{
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+.white {
+  color: white;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10%;
+  margin-top: 60px;
+}
+
+.logos img {
+  grid-auto-columns: auto;
+  align-self: center;
+  margin: 0 0 30px 0;
+  width: 100%;
 }
 
 /* Footer */
@@ -770,11 +806,11 @@ footer {
   text-align: center;
   text-decoration: none;
 
-
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
-  transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s,
+    background-color 0.3s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s, background-color 0.3s 0s;
 
   z-index: 999;
 }
@@ -786,8 +822,9 @@ footer {
 .cd-top.cd-top--show,
 .cd-top.cd-top--fade-out,
 .cd-top:hover {
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
-  transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s,
+    background-color 0.3s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s, background-color 0.3s 0s;
 }
 
 .cd-top.cd-top--show {
@@ -814,12 +851,24 @@ footer {
   header {
     margin: 0 100px;
   }
+
+  .goals {
+    left: -100px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   main,
   header {
     margin: 0 50px;
+  }
+
+  .goals {
+    left: -50px;
+  }
+
+  .goals-content {
+    padding: 0 50px 0 50px;
   }
 }
 
@@ -828,11 +877,11 @@ footer {
     z-index: 9999;
   }
 
-  nav{
+  nav {
     height: auto;
   }
 
-  .burger{
+  .burger {
     display: none;
   }
 
@@ -840,7 +889,7 @@ footer {
     list-style-type: none;
     display: inline;
   }
-  
+
   nav li {
     display: inline;
     margin-left: 30px;
@@ -854,7 +903,7 @@ footer {
     display: inline-block;
     margin: 0 0 3px 30px;
   }
-  
+
   nav li:last-child::after {
     width: 0;
     height: 0;
@@ -978,7 +1027,20 @@ footer {
     margin: 0 30px;
   }
 
-  .cd-top{
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20%;
+  }
+
+  .goals-content {
+    padding: 0 30px 0 30px;
+  }
+
+  .goals {
+    left: -30px;
+  }
+
+  .cd-top {
     bottom: 10px;
     right: 10px;
   }
